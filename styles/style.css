@@ -1,36 +1,32 @@
+:root {
+    font-size: 16px;
+
+}
+
 * {
     font-family: 'Butler';
 }
 
 .page-title {
-    font-family: 'Butler', serif;
-    font-size: 5.438rem;
-    font-weight: 400;
+    font-family: 'Butler Light', serif;
+    font-size: 5.4375rem;
+    font-weight: 300;
 }
 
-.subtitle {
+h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.125rem;
     font-weight: 700;
 }
 
 .page-description {
-    font-family: 'Roboto' ;
+    font-family: 'Roboto';
     font-size: 1.125rem;
-    font-weight: 500;
-}
-
-.text {
-    font-family: 'Butler' ;
-    font-size: 2rem;
     font-weight: 400;
 }
 
-.bold {
-    font-weight: 700;
-}
-
-.roboto {
-    font-family: 'Roboto';
-    font-size: 1rem;
+blockquote {
+    font-family: 'Butler UltraLight';
+    font-size: 2rem;
+    font-weight: 200;
 }
