@@ -1,32 +1,32 @@
 :root {
     font-size: 16px;
-
+    line-height: 1.2;
 }
 
-* {
-    font-family: 'Butler';
+body {
+    font-family: 'Butler', 'Times New Roman', Times, serif;
+    font-size: 1rem;
 }
 
 .page-title {
-    font-family: 'Butler Light', serif;
+    font-family: 'Butler', 'Times New Roman', Times, serif ;
     font-size: 5.4375rem;
     font-weight: 300;
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.125rem;
     font-weight: 700;
 }
 
 .page-description {
-    font-family: 'Roboto';
+    font-family: 'Roboto' Arial, Helvetica, sans-serif;
     font-size: 1.125rem;
-    font-weight: 400;
 }
 
 blockquote {
-    font-family: 'Butler UltraLight';
+    font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 2rem;
     font-weight: 200;
 }
