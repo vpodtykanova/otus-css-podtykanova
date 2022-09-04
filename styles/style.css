@@ -1,0 +1,32 @@
+:root {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+body {
+    font-family: 'Butler', 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+.page-title {
+    font-family: 'Butler', 'Times New Roman', Times, serif ;
+    font-size: 5.4375rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.page-description {
+    font-family: 'Roboto' Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+}
+
+blockquote {
+    font-family: 'Butler', 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 200;
+}
