@@ -8,16 +8,41 @@ body {
     font-size: 1rem;
 }
 
+.promo {
+    background-image: url('../img/Atlas_Web_Studio.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 39.375rem;
+    width: 66.5625rem;
+    margin: 0 auto;
+    padding-top: 8.5625rem;
+}
+
+.promo-box {
+    background-color: #fff;
+    width: 34.8125rem;
+    height: 22.1875rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .page-title {
     font-family: 'Butler', 'Times New Roman', Times, serif ;
     font-size: 5.4375rem;
     font-weight: 300;
+    padding-top: 8.125rem;
+    margin-bottom: 0;
 }
 
 h2 {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.125rem;
     font-weight: 700;
+}
+
+.sub-title {
+    margin-bottom: 1.125rem;
 }
 
 .page-description {
