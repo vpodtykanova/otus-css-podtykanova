@@ -9,7 +9,6 @@ body {
 }
 
 .promo {
-    background-image: url('../img/Atlas_Web_Studio.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -45,9 +44,35 @@ h2 {
     margin-bottom: 1.125rem;
 }
 
+#biography {
+    margin: 3%;
+}
+
+.biography-img-container {
+    width: 34.5625rem;
+    height: 52.5rem;
+    float: left
+
+}
+
+.biography-content {
+    width: 29.8125rem ;
+    height: 40.75rem;
+    left: 8.375rem;
+    float: right;
+    
+}
+
+.clearfix {
+    clear: both;
+}
+
 .page-description {
     font-family: 'Roboto' Arial, Helvetica, sans-serif;
+    color:#636363;
+    line-height: 1;
     font-size: 1.125rem;
+
 }
 
 blockquote {
