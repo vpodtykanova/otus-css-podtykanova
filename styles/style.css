@@ -8,41 +8,61 @@ body {
     font-size: 1rem;
 }
 
-.promo {
-    background-image: url('../img/Atlas_Web_Studio.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: 39.375rem;
-    width: 66.5625rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1440px;
     margin: 0 auto;
-    padding-top: 8.5625rem;
+}
+
+section {
+    height: 100vh;
+    min-height: 600;
+    max-height: 1200;
+    position: relative;
+}
+
+.background-promo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
 }
 
 .promo-box {
     background-color: #fff;
-    width: 34.8125rem;
-    height: 22.1875rem;
-    margin: 0 auto;
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+
+    font-size: 5.5rem;
+    padding: 1.5em 0.8em;
 }
 
 .page-title {
     font-family: 'Butler', 'Times New Roman', Times, serif ;
-    font-size: 5.4375rem;
+    font-size: 1em;
     font-weight: 300;
-    padding-top: 8.125rem;
-    margin-bottom: 0;
+    margin: 0; 
 }
 
 h2 {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 1.125rem;
+    font-size: 0.22em;
     font-weight: 700;
 }
 
 .sub-title {
-    margin-bottom: 1.125rem;
+    position: absolute;
+    left: 0%;
+    right: 0%;
 }
 
 .page-description {
