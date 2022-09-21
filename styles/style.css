@@ -46,6 +46,7 @@ section {
     z-index: 1;
     font-size: 5.5rem;
     padding: 1.5em 0.8em;
+    background-color: #fff;
 }
 
 .page-title {
