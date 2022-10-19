@@ -6,7 +6,7 @@
 body {
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 1rem;
-    background-color:#fff
+    background-color:rgb(218, 108, 108)
 }
 
 * {
@@ -25,6 +25,7 @@ section {
     min-height: 600px;
     max-height: 1200px;
     position: relative;
+    background-color: blanchedalmond;
 }
 
 .background-promo {
@@ -73,22 +74,33 @@ h2 {
 }
 
 .biography-img-container {
-    width: 34.5625rem;
-    height: 52.5rem;
-    float: left
-
+    float: left;
+    width: 50%;
+    background-color: aqua;
 }
 
+.biography{
+    position: absolute;
+    rotate: 270deg;
+    bottom: 0;
+    right: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
 .biography-content {
-    width: 29.8125rem ;
-    height: 40.75rem;
-    left: 8.375rem;
     float: right;
-    
+    width: 50%;
+    margin-top: 15%;
+    background-color: brown;
 }
 
-.clearfix {
-    clear: both;
+.page-title-biography {
+    font-family: 'Butler', 'Times New Roman', Times, serif;
+    font-size: 5.5rem;
+    font-weight: 400;
+    margin-bottom: 5%;
 }
 
 .page-description {
@@ -99,8 +111,14 @@ h2 {
 
 }
 
+.clearfix {
+    clear: both;
+}
+
+
 blockquote {
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 2rem;
     font-weight: 200;
+    margin-right: 12.5rem;
 }
