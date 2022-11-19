@@ -6,7 +6,7 @@
 body {
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 1rem;
-    background-color:#fff
+    background-color: #fff;
 }
 
 * {
@@ -68,13 +68,76 @@ h2 {
     right: 0%;
 }
 
+.biography-img-container {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: right;
+}
+
+.biography-img-container img {
+    height: 93.5%;
+    max-height: 840px;
+    position: relative;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-53.6%);
+}
+
+.biography{
+    position: absolute;
+    rotate: 270deg;
+    bottom: 11%;
+    right: 2.6%;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+.biography-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+.biography-text {
+    position: relative;
+    padding: 16%;
+    padding: 27% 15.2% 16%;
+    top: 50%;
+    right: -0.4%;
+    transform: translateY(-53%);
+}
+
+.page-title-biography {
+    font-family: 'Butler', 'Times New Roman', Times, serif;
+    font-size: 5.5rem;
+    font-weight: 400;
+    margin-bottom: 6%;
+}
+
 .page-description {
     font-family: 'Roboto' Arial, Helvetica, sans-serif;
+    color:#636363;
+    line-height: 1.5;
     font-size: 1.125rem;
+
+}
+.hr {
+    width: 0.9rem;
+    background-color: black;
+    height: 0.3rem;
+    margin-top: 3.4rem;
+    margin-bottom: 2.1rem;
 }
 
 blockquote {
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 2rem;
     font-weight: 200;
+}
+
+.clearfix::after {
+    content: ""; 
+    display: block;
+    clear: both;
 }
