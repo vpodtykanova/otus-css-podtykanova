@@ -84,7 +84,7 @@ h2 {
     transform: translateY(-53.6%);
 }
 
-.biography {
+.biography{
     position: absolute;
     rotate: 270deg;
     bottom: 11%;
@@ -94,13 +94,11 @@ h2 {
     font-weight: 700;
 
 }
-
 .biography-content {
     float: right;
     width: 50%;
     height: 100%;
 }
-
 .biography-text {
     position: relative;
     padding: 16%;
@@ -118,13 +116,12 @@ h2 {
 }
 
 .page-description {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto' Arial, Helvetica, sans-serif;
     color:#636363;
     line-height: 1.5;
     font-size: 1.125rem;
 
 }
-
 .hr {
     width: 0.9rem;
     background-color: black;
@@ -145,21 +142,35 @@ blockquote {
     clear: both;
 }
 
-.designers {
+.designers-header {
     position: absolute;
     rotate: 270deg;
-    top: 15%;
+    top: 50%;
+    transform: translateX(318px);
     right: 25.9%;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
 }
 
+#designers {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+}
+#designers img {
+    width: 309px;
+    height: 442px;
+    object-fit: cover;
+}
+
 .designers-content {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-top: 7.1%;
+    flex-grow: 1;
+    overflow-x: auto;
+    margin-top: -6%;
 }
 
 .designers-article {
@@ -170,6 +181,10 @@ blockquote {
     flex-direction: column;
 }
 
+.designers-big {
+    width: 609px !important;
+    height: 538px !important;
+}
 .name-designers {
     font-weight:700;
     text-transform: uppercase;   
@@ -177,4 +192,10 @@ blockquote {
 
 .designers-article-text {
     align-self: center;
+}
+
+.text-title {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
 }
