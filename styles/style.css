@@ -257,13 +257,14 @@ blockquote {
     font-weight: 700;
 }
 
-.testimonials__img-big{
+.testimonials__img-big {
     width: 515px;
     height: 757px;
     object-fit: cover;
     grid-column: 2 / 2;
     grid-row: 2 / 5;
 }
+
 .testimonials__text {
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 2rem;
@@ -272,6 +273,7 @@ blockquote {
     grid-row: 2 / 2;
     text-align: center;
 }
+
 .testimonials__img-little {
     width: 221px;
     height: 333px;
