@@ -221,21 +221,23 @@ blockquote {
 
 #testimonials {
     display: grid;
-    grid-template-columns: 145px 517px 1fr;
-    grid-template-rows: 111px 1fr;
-    gap: 31px;   
+    grid-template-columns: 156px 517px 1fr;
+    grid-template-rows: 105px 1fr;
+    column-gap: 18px;
+    row-gap: 36px;  
 }
 
 .testimonials__header {
-    grid-column-start: 2;
-    transform: translate(0px, 79px);
+    grid-column: 2 / 4;
+    display: flex;
+    align-self: flex-end;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
 }
 
 .links {
-    display: grid;
+    /* display: grid;
     grid-column-start: 1;
     grid-row-start: 2;
     grid-template-columns: 196px 186px 186px;
@@ -243,7 +245,15 @@ blockquote {
     gap: 37px;
     align-items: center;
     rotate: 270deg;
-    transform: translate(-255px, 43px);
+    transform: translate(-255px, 43px); */
+    display: flex;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    writing-mode: vertical-rl;
+    align-items: end;
+    transform: scale(-1);
+    justify-content: center;
+    white-space: break-spaces;   
 }
 
 .links a {  
@@ -272,8 +282,7 @@ blockquote {
     display: grid;
     grid-auto-columns: 0fr;
     grid-auto-rows: 296px;
-    justify-content: center;
-    transform: translate(17px, 0px);
+    transform: translate(277px, 3px);
  }
 
 .testimonials__text {
