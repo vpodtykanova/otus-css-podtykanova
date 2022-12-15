@@ -143,7 +143,11 @@ blockquote {
 }
 
 #designers {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -151,6 +155,8 @@ blockquote {
     position: absolute;
     rotate: 270deg;
     top: 50%;
+    -webkit-transform: translateX(318px);
+    -ms-transform: translateX(318px);
     transform: translateX(318px);
     right: 25.9%;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -159,9 +165,17 @@ blockquote {
 }
 
 .designers__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
     overflow-x: auto;
     margin-top: -4.3%;
@@ -172,7 +186,12 @@ blockquote {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 1rem;
 }
@@ -192,7 +211,8 @@ blockquote {
 .designer__img {
     width: 309px;
     height: 442px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .designer_big .designer__img {
@@ -210,6 +230,8 @@ blockquote {
 }
 
 .designer_big .designer__article-text {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
 }
 
@@ -220,15 +242,42 @@ blockquote {
 }
 
 #testimonials {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 156px 18px 517px 18px 1fr;
     grid-template-columns: 156px 517px 1fr;
+    -ms-grid-rows: 105px 36px 1fr;
     grid-template-rows: 105px 1fr;
+    -webkit-column-gap: 18px;
+    -moz-column-gap: 18px;
     column-gap: 18px;
     row-gap: 36px;  
+}#testimonials > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;  
+}#testimonials > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;  
+}#testimonials > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;  
+}#testimonials > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;  
+}#testimonials > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;  
+}#testimonials > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;  
 }
 
 .testimonials__header {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-column: 2 / 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     align-self: flex-end;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -237,21 +286,24 @@ blockquote {
 }
 
 .links {
-    /* display: grid;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    grid-template-columns: 196px 186px 186px;
-    grid-template-rows: 1fr;
-    gap: 37px;
-    align-items: center;
-    rotate: 270deg;
-    transform: translate(-255px, 43px); */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-grid-column: 1;
     grid-column-start: 1;
+    -ms-grid-row: 2;
     grid-row-start: 2;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: end;
+    -webkit-transform: scale(-1);
+    -ms-transform: scale(-1);
     transform: scale(-1);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     white-space: break-spaces;   
 }
@@ -261,6 +313,7 @@ blockquote {
     font-weight: 400;
     font-size: 1rem;
     color: black;
+    -webkit-text-decoration: wavy;
     text-decoration: wavy;
 }
 
@@ -269,19 +322,27 @@ blockquote {
 }
 
 .testimonials_img-big {
+    -ms-grid-column: 2;
     grid-column: 2;
+    -ms-grid-row: 2;
     grid-row: 2;
     width: 515px;
     height: 757px;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
- .testimonials__content {
+.testimonials__content {
+    -ms-grid-column: 3;
     grid-column-start: 3;
+    -ms-grid-row: 2;
     grid-row-start: 2;
+    display: -ms-grid;
     display: grid;
     grid-auto-columns: 0fr;
     grid-auto-rows: 296px;
+    -webkit-transform: translate(277px, 3px);
+    -ms-transform: translate(277px, 3px);
     transform: translate(277px, 3px);
  }
 
@@ -295,5 +356,6 @@ blockquote {
 .testimonials_img-little {
     width: 221px;
     height: 333px;
+    -o-object-fit: cover;
     object-fit: cover;
 }
