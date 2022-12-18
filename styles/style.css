@@ -221,39 +221,26 @@ blockquote {
 
 #testimonials {
     display: grid;
-    grid-template-columns: 156px 517px 1fr;
-    grid-template-rows: 105px 1fr;
-    column-gap: 18px;
-    row-gap: 36px;  
+    grid-template-columns: 10% 36% 1fr;
+    grid-template-rows: 11% auto;
+    gap: 4.5% 2%;
+    align-content: center;
+    justify-content: center;
 }
 
 .testimonials__header {
     grid-column: 2 / 4;
-    display: flex;
-    align-self: flex-end;
+    align-self: end;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
 }
 
 .links {
-    /* display: grid;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    grid-template-columns: 196px 186px 186px;
-    grid-template-rows: 1fr;
-    gap: 37px;
-    align-items: center;
-    rotate: 270deg;
-    transform: translate(-255px, 43px); */
     display: flex;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    writing-mode: vertical-rl;
-    align-items: end;
-    transform: scale(-1);
-    justify-content: center;
-    white-space: break-spaces;   
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-end;
 }
 
 .links a {  
@@ -261,7 +248,10 @@ blockquote {
     font-weight: 400;
     font-size: 1rem;
     color: black;
-    text-decoration: wavy;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    transform: scale(-1);
+    white-space: break-spaces;
 }
 
 .links__text-title {
@@ -269,31 +259,28 @@ blockquote {
 }
 
 .testimonials_img-big {
-    grid-column: 2;
-    grid-row: 2;
-    width: 515px;
-    height: 757px;
-    object-fit: cover;
+overflow: hidden;
 }
 
- .testimonials__content {
-    grid-column-start: 3;
-    grid-row-start: 2;
+.testimonials__content {
     display: grid;
     grid-auto-columns: 0fr;
-    grid-auto-rows: 296px;
-    transform: translate(277px, 3px);
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-self: start;
  }
-
+ 
 .testimonials__text {
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 2rem;
     font-weight: 200;
-    text-align: center;
 }
 
 .testimonials_img-little {
-    width: 221px;
-    height: 333px;
     object-fit: cover;
+    margin: 13%;
 }
