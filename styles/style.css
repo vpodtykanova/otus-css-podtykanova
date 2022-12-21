@@ -221,9 +221,9 @@ blockquote {
 
 #testimonials {
     display: grid;
-    grid-template-columns: 10% 36% 1fr;
-    grid-template-rows: 11% 84%;
-    gap: 4.5% 2%;
+    grid-template-columns: 10% 36% 49%;
+    grid-template-rows: 11% 84.5%;
+    gap: 4.5% 2.5%;
     align-content: center;
     justify-content: center;
 }
@@ -241,6 +241,7 @@ blockquote {
     flex-direction: column;
     align-items: baseline;
     justify-content: space-evenly;
+    max-height: 757px;
 }
 
 .links a {  
@@ -283,4 +284,10 @@ overflow: hidden;
 .testimonials_img-little {
     object-fit: cover;
     margin: 13%;
+}
+
+@media (max-height: 750px) {
+    .testimonials__content {
+        grid-auto-columns: unset;
+    }
 }
