@@ -192,6 +192,7 @@ blockquote {
 .designer__img {
     width: 309px;
     height: 442px;
+    object-fit: cover;
 }
 
 .designer_big .designer__img {
