@@ -271,13 +271,9 @@ overflow: hidden;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-<<<<<<< HEAD
- }
-=======
     align-self: start;
 }
->>>>>>> 94d9aa44a85d04e9e53d711238747f908bc25fa4
- 
+
 .testimonials__text {
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 2rem;
