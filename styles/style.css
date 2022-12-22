@@ -274,7 +274,7 @@ overflow: hidden;
     text-align: center;
     align-self: start;
 }
-
+ 
 .testimonials__text {
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 2rem;
@@ -292,20 +292,49 @@ overflow: hidden;
     }
 }
 
+#strongpoints {
+    overflow-x: auto;
+}
+
 .strongpoints__header {
     position: absolute;
     rotate: 270deg;
-    top: 53%;
-    transform: translateX(318px);
-    left: 30.3%;
+    top: 50%;
+    transform: translateX(298px);
+    left: 29.6%;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 700
 }
 
 .strongpoint {
-    overflow-x: auto;
-    padding: 19.3% 0% 0%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-33.8%);
+    white-space: nowrap;
+}
+
+.strongpoint__item {
+    display: inline-block;
+    width: 350px;
+    height: 525px;
+    object-fit: cover;
+    vertical-align: top;
+    margin-right: 1.7%;
+}
+
+.strongpoint__item:last-child {
+    margin-right: 0;
+}
+
+.strongpoint__item_list {
+    width: auto;
+    position: relative;
+}
+
+.strongpoint__list {
+    display: inline-block;
+    list-style-type: none;
 }
 
 .strongpoint_title {
@@ -316,44 +345,25 @@ overflow: hidden;
     top: 16.1%;
     right: 16.4%;
     font-size: 5.8rem;
+    top: -1.4em;
+    right: 1.5em;
 } 
-
-.strongpoint img {
-    display: inline-block;
-    margin-right: 2%;
-}
-
-.strongpoint__img {
-    width: 350px;
-    height: 525px;
-    object-fit: cover;
-}
-
-.strongpoint__list {
-    display: inline-block;
-    list-style-type: none;
-}
 
 .strongpoint__text {
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 2.1rem;
     font-weight: 400;
     line-height: 2.5rem;
+    text-align: left;
+    line-height: 2.5rem;
+    padding: 0.9em 7.6em 0em 4em;
 } 
 
 @supports(display: flex) {
-    .strongpoint{
+    .strongpoint {
         display: flex;
-        overflow-x: auto;
         align-items: center;
         justify-content: flex-start;
         flex-wrap: nowrap;
-        gap: 2.1%;
-        padding-top: 19.5%;
-    }
-
-    .strongpoint ul{
-        list-style-type: none;
-        margin: 0% 9.9%;
     }
 }
