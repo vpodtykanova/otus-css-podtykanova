@@ -338,12 +338,8 @@ overflow: hidden;
 }
 
 .strongpoint_title {
-    font-family: 'Butler', 'Times New Roman', Times, serif;
-    font-size: 5.5rem;
     font-weight: 400;
     position: absolute;
-    top: 16.1%;
-    right: 16.4%;
     font-size: 5.8rem;
     top: -1.4em;
     right: 1.5em;
@@ -352,10 +348,7 @@ overflow: hidden;
 .strongpoint__text {
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 2.1rem;
-    font-weight: 400;
-    line-height: 2.5rem;
     text-align: left;
-    line-height: 2.5rem;
     padding: 0.9em 7.6em 0em 4em;
 } 
 
