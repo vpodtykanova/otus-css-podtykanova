@@ -27,7 +27,7 @@ section {
     position: relative;
 }
 
-.promo__background{
+.promo-image{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -36,7 +36,7 @@ section {
     max-height: 100%;
 }
 
-.promo__box {
+.promo {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -48,7 +48,7 @@ section {
     background-color: #fff;
 }
 
-.promo__box-title {
+.promo__title {
     font-family: 'Butler', 'Times New Roman', Times, serif ;
     font-size: 1em;
     font-weight: 300;
@@ -62,20 +62,20 @@ h2 {
     font-weight: 700;
 }
 
-.promo__box__sub-title {
+.promo__sub-title {
     position: absolute;
     left: 0%;
     right: 0%;
 }
 
-.biography_img__container {
+.biography-image {
     float: left;
     width: 50%;
     height: 100%;
     text-align: right;
 }
 
-.biography_img__container img {
+.biography-image img {
     height: 93.5%;
     max-height: 840px;
     position: relative;
@@ -99,7 +99,7 @@ h2 {
     width: 50%;
     height: 100%;
 }
-.biography_content {
+.biography-content {
     position: relative;
     padding: 16%;
     padding: 27% 15.2% 16%;
@@ -108,21 +108,21 @@ h2 {
     transform: translateY(-53%);
 }
 
-.biography_content__page-title {
+.biography-content__page-title {
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 5.5rem;
     font-weight: 400;
     margin-bottom: 6%;
 }
 
-.biography_content__page-description {
+.biography-content__page-description {
     font-family: 'Roboto' Arial, Helvetica, sans-serif;
     color:#636363;
     line-height: 1.5;
     font-size: 1.125rem;
 
 }
-.biography_content__hr {
+.biography-content_hr {
     width: 0.9rem;
     background-color: black;
     height: 0.3rem;
