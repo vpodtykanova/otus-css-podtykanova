@@ -29,7 +29,7 @@ body {
 
 .subtitle {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 0.22em;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -61,6 +61,7 @@ body {
     position: absolute;
     left: 0%;
     right: 0%;
+    font-size: 0.22em;
 }
 
 .promo__image {
