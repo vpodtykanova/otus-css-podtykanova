@@ -15,28 +15,29 @@ body {
     box-sizing: border-box; ;
 }
 
-main {
+.main {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-section {
+.section {
     height: 100vh;
     min-height: 600px;
     max-height: 1200px;
     position: relative;
 }
 
-.background-promo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    max-width: 100%;
-    max-height: 100%;
+.subtitle {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
-.promo-box {
+.promo {
+
+}
+
+.promo-titles {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -48,7 +49,7 @@ section {
     background-color: #fff;
 }
 
-.page-title {
+.promo__title {
     font-family: 'Butler', 'Times New Roman', Times, serif ;
     font-size: 1em;
     font-weight: 300;
@@ -56,35 +57,27 @@ section {
     white-space: nowrap;
 }
 
-h2 {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 0.22em;
-    font-weight: 700;
-}
-
-.sub-title {
+.promo__sub-title {
     position: absolute;
     left: 0%;
     right: 0%;
+    font-size: 0.22em;
 }
 
-.biography-img-container {
-    float: left;
-    width: 50%;
-    height: 100%;
-    text-align: right;
-}
-
-.biography-img-container img {
-    height: 93.5%;
-    max-height: 840px;
-    position: relative;
-    right: 5%;
+.promo__image {
+    position: absolute;
     top: 50%;
-    transform: translateY(-53.6%);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.biography{
+.biography {
+
+} 
+
+.biography__title {
     position: absolute;
     rotate: 270deg;
     bottom: 11%;
@@ -94,12 +87,30 @@ h2 {
     font-weight: 700;
 
 }
-.biography-content {
+
+.biography__image-conteiner {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: right;
+}
+
+.biography__image {
+    height: 93.5%;
+    max-height: 840px;
+    position: relative;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-53.6%);
+}
+
+.biography__conteiner {
     float: right;
     width: 50%;
     height: 100%;
 }
-.biography-text {
+
+.biography__content {
     position: relative;
     padding: 16%;
     padding: 27% 15.2% 16%;
@@ -108,21 +119,22 @@ h2 {
     transform: translateY(-53%);
 }
 
-.page-title-biography {
+.biography__page-title {
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 5.5rem;
     font-weight: 400;
     margin-bottom: 6%;
 }
 
-.page-description {
+.biography__page-description {
     font-family: 'Roboto' Arial, Helvetica, sans-serif;
     color:#636363;
     line-height: 1.5;
     font-size: 1.125rem;
 
 }
-.hr {
+
+.biography__hr {
     width: 0.9rem;
     background-color: black;
     height: 0.3rem;
@@ -130,7 +142,7 @@ h2 {
     margin-bottom: 2.1rem;
 }
 
-blockquote {
+.biography__blockquote {
     font-family: 'Butler', 'Times New Roman', Times, serif;
     font-size: 2rem;
     font-weight: 200;
@@ -142,7 +154,7 @@ blockquote {
     clear: both;
 }
 
-#designers {
+.designers {
     display: flex;
     align-items: center;
 }
@@ -219,7 +231,7 @@ blockquote {
     font-size: 1rem;
 }
 
-#testimonials {
+.testimonials {
     display: grid;
     grid-template-columns: 10% 36% 49%;
     grid-template-rows: 11% 84.5%;
@@ -236,7 +248,7 @@ blockquote {
     font-weight: 700;
 }
 
-.links {
+.testimonials-links {
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -244,7 +256,7 @@ blockquote {
     max-height: 757px;
 }
 
-.links a {  
+.testimonials__link {  
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -254,12 +266,12 @@ blockquote {
     transform: scale(-1);
 }
 
-.links__text-title {
+.testimonials__text-title {
     font-weight: 700;
     display: block;
 }
 
-.testimonials_img-big {
+.testimonials_img-conteiner {
 overflow: hidden;
 }
 
@@ -281,7 +293,7 @@ overflow: hidden;
     font-weight: 200;
 }
 
-.testimonials_img-little {
+.testimonials__img-little {
     object-fit: cover;
     margin: 13%;
 }
@@ -292,7 +304,7 @@ overflow: hidden;
     }
 }
 
-#strongpoints {
+.strongpoints {
     overflow-x: auto;
 }
 
@@ -337,7 +349,7 @@ overflow: hidden;
     list-style-type: none;
 }
 
-.strongpoint_title {
+.strongpoint__title {
     font-weight: 400;
     position: absolute;
     font-size: 5.8rem;
