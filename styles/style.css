@@ -372,3 +372,181 @@ overflow: hidden;
         flex-wrap: nowrap;
     }
 }
+
+@media screen and (max-width: 428px) {
+    .section {
+        max-height: 900px;
+    }
+
+    .promo-titles {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: unset;
+        padding: 1.8em 0em;
+    }
+
+    .promo__title {
+        font-size: 70px;
+    }
+
+    .promo__image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .biography {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+
+    .biography__title {
+        rotate: unset;
+        bottom: 92.3%;
+        right: 6.3%;
+    }
+
+    .biography__image-conteiner {
+        float: unset;
+        width: unset;
+        height: 40%;
+    }
+
+    .biography__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: unset;
+        right: unset;
+        top: unset;
+        transform: unset;
+    }
+
+    .biography__conteiner {
+        float: unset;
+        width: unset;
+        height: 60%;
+    }
+
+    .biography__content {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 11% 6%;
+        position: unset;
+        padding: unset;
+        padding: unset;
+        top: unset;
+        right: unset;
+        transform: unset;
+    }
+    
+    .biography__page-title {
+        font-size: 4.8rem;
+        margin-bottom: unset;
+    }
+    
+    .biography__br {
+        display: none;
+    }
+
+    .biography__page-description {
+        order: 4;
+        margin-right: 44%;
+    }
+    
+    .biography__hr {
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+    
+    .biography__blockquote {
+        padding-top: 23%;
+    }
+
+    .designers__header {
+        position: absolute;
+        rotate: unset;
+        top: 6%;
+        transform: unset;
+        right: 6.3%;
+    }
+
+    .testimonials {
+        grid-template-columns: 47.5% 50%;
+        grid-template-rows: 10% 66% 19%;
+        gap: 2.5% 2.5%;
+    }
+    
+    .testimonials__header {
+        grid-column: 2;
+        align-self: unset;
+        justify-self: center;
+    }
+    
+    .testimonials-links {
+        display: flex;
+        grid-row: 3;
+        grid-column: 1/3;
+        flex-direction: unset;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0% 7% 0%;
+    }
+    
+    .testimonials__link {  
+        writing-mode: unset;
+        transform: unset;
+    }
+    
+    .testimonials__img-conteiner {
+        display: none;
+    }
+    
+    .testimonials__content {
+        display: block;
+        grid-column: 1 / 3;
+        grid-auto-columns: unset;
+        justify-items: unset;
+        align-content: unset;
+        align-items: unset;
+        flex-direction: unset;
+        justify-content: unset;
+        align-self: unset;
+        margin: 6%;
+    }
+    
+    .testimonials__img-little {
+        object-fit: cover;
+        margin: unset;
+        margin-top: 21%;
+        width: 100%;
+        height: 62%;
+    }
+    
+    .strongpoint {
+        transform: translateY(-18.8%);
+    }
+
+    .strongpoints__header {
+        position: sticky;
+        rotate: unset;
+        top: 16%;
+        transform: unset;
+        left: 63.6%;
+    }
+    .strongpoint__title {
+        right: -1.5em;
+    }
+
+    .strongpoint__text {
+        padding: 0.9em 0.6em 0em 1em;
+    }
+}
