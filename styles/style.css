@@ -642,6 +642,10 @@ overflow: hidden;
         z-index: 100;
         background-color: #fff;
         bottom: 0;
+        border-top: solid;
+        border-color: #000;
+        border-width: thin;
+    }
     }
 
     .navigation__links {
