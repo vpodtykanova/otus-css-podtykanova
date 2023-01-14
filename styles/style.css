@@ -163,7 +163,7 @@ body {
     position: absolute;
     rotate: 270deg;
     top: 50%;
-    transform: translateX(318px);
+    transform: translateX(346px);
     right: 25.9%;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
@@ -176,7 +176,7 @@ body {
     align-items: baseline;
     flex-grow: 1;
     overflow-x: auto;
-    margin-top: -4.3%;
+    margin-top: -1.3%;
     gap: 24px;
 }
 
@@ -190,7 +190,7 @@ body {
 }
 
 .designer_big {
-    margin: 0 87px ;
+    margin: 0 87px ;;
 }
 
 .designer_big:first-child {
@@ -205,9 +205,10 @@ body {
     width: 309px;
     height: 442px;
     object-fit: cover;
+    transition: 1s;
 }
 
-.designer_big .designer__img {
+.designer_big .designer__img:hover {
     width: 609px;
     height: 538px
 }
