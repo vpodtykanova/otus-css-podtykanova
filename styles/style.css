@@ -134,6 +134,10 @@ body {
 
 }
 
+.biography__description-br {
+    display: none;
+}
+
 .biography__hr {
     width: 0.9rem;
     background-color: black;
@@ -373,49 +377,90 @@ overflow: hidden;
     }
 }
 
-@media screen and (max-width: 428px) {
+.navigation {
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+
+    .biography__image {
+        width: 450px;
+    }
+
+    .biography__title {
+        right: 0%;
+    }
+
+    .designers__header {
+        top: 45%;
+    }
+
+    .designer_big .designer__img {
+        width: 309px;
+        height: 442px;
+    } 
+    
+    .testimonials__img {
+        width: 367px;
+        height: 720px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 770px) {
     .section {
-        max-height: 900px;
+        min-height: 0;
+        max-height: none;
+        height: 93vh;
+    }
+
+    .scroller {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    .scroller section {
+        scroll-snap-align: start;
     }
 
     .promo-titles {
-        position: relative;
-        top: unset;
-        left: unset;
-        transform: unset;
-        padding: 1.8em 0em;
+        top: 20%;
+        left: 0;
+        right: 0;
+        transform: translate(0%, -50%);
+        padding: 0;
     }
 
     .promo__title {
         font-size: 70px;
+        white-space: unset;
     }
 
     .promo__image {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        top: 40%;
+        left: 0%;
+        transform: none;
         width: 100%;
-        height: 100%;
+        height: 60%;
         object-fit: cover;
     }
 
     .biography {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column-reverse;
         justify-content: flex-start;
     }
 
     .biography__title {
-        rotate: unset;
+        rotate: none;
         bottom: 92.3%;
         right: 6.3%;
     }
 
     .biography__image-conteiner {
-        float: unset;
-        width: unset;
+        float: none;
+        width: 100%;
         height: 40%;
     }
 
@@ -423,59 +468,87 @@ overflow: hidden;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        position: unset;
-        right: unset;
-        top: unset;
-        transform: unset;
+        position: static;
+        right: 0;
+        top: 0;
+        transform: none;
     }
 
     .biography__conteiner {
-        float: unset;
-        width: unset;
+        float: none;
+        width: 100%;
         height: 60%;
     }
 
     .biography__content {
         display: flex;
-        flex-direction: column-reverse;
-        margin: 11% 6%;
-        position: unset;
-        padding: unset;
-        padding: unset;
-        top: unset;
-        right: unset;
-        transform: unset;
+        flex-direction: column;
+        padding: 11% 6%;
+        position: static;
+        top: 0;
+        right: 0;
+        transform: none;
+        height: 100%;
+        justify-content: space-between;
     }
     
     .biography__page-title {
-        font-size: 4.8rem;
-        margin-bottom: unset;
+        order: 3;
+        font-size: 3.8rem;
+        margin-bottom: none;
+        white-space: nowrap;
     }
     
     .biography__br {
         display: none;
     }
 
+    .biography__description-br {
+        display: block;
+    }
+
     .biography__page-description {
-        order: 4;
-        margin-right: 44%;
+        order: 1;
+        margin-right: 0;
     }
     
     .biography__hr {
-        margin-top: unset;
-        margin-bottom: unset;
+        display: none;
     }
     
     .biography__blockquote {
-        padding-top: 23%;
+        order: 2;
+        padding: 1.2%;
+        font-size: 1.6rem;
     }
 
     .designers__header {
         position: absolute;
-        rotate: unset;
+        rotate: none;
         top: 6%;
-        transform: unset;
+        transform: none;
         right: 6.3%;
+    }
+
+    .designer_big {
+        margin: 0;
+    }
+
+    .designer__img {
+        width: 85vh;
+        max-width: 309px;
+        height: 442px;
+        object-fit: cover;
+    }
+
+    .designer_big .designer__img {
+        width: 309px;
+        height: 442px;
+    }
+
+    .designers__content {
+        margin-top: 12.7%;
+        padding: 0 24px;
     }
 
     .testimonials {
@@ -486,7 +559,7 @@ overflow: hidden;
     
     .testimonials__header {
         grid-column: 2;
-        align-self: unset;
+        align-self: center;
         justify-self: center;
     }
     
@@ -498,7 +571,7 @@ overflow: hidden;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        margin: 0% 7% 0%;
+        margin: 0% 3% 0%;
     }
     
     .testimonials__link {  
@@ -520,33 +593,69 @@ overflow: hidden;
         flex-direction: unset;
         justify-content: unset;
         align-self: unset;
-        margin: 6%;
+        margin: 0;
     }
     
     .testimonials__img-little {
         object-fit: cover;
         margin: unset;
-        margin-top: 21%;
+        margin-top: 3%;
         width: 100%;
         height: 62%;
     }
     
     .strongpoint {
-        transform: translateY(-18.8%);
-    }
+        transform: translateY(-34.8%);
+        padding: 0 3%;
+        width: 85vh;
+    }   
 
     .strongpoints__header {
         position: sticky;
-        rotate: unset;
-        top: 16%;
+        rotate: none;
+        top: 6%;
         transform: unset;
         left: 63.6%;
     }
+    
     .strongpoint__title {
-        right: -1.5em;
+        right: -1.3em;
+        font-size: 3.8rem;
     }
 
     .strongpoint__text {
         padding: 0.9em 0.6em 0em 1em;
+        font-size: 1.7rem;
+    }
+    
+    .strongpoint__item {
+        max-width: 350px;
+        height: 462px;
+    }
+
+    .navigation {
+        display: flex;
+        height: 7vh;
+        justify-content: space-around;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        background-color: #fff;
+        bottom: 0;
+    }
+
+    .navigation__links {
+        font-family: 'Butler', 'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-size: 40px;
+        color: black;
+    }
+
+    .navigation__letter {
+        display: block;
+    }
+
+    .navigation__word {
+        display: none;
     }
 }
