@@ -18,6 +18,7 @@ body {
 .main {
     max-width: 1440px;
     margin: 0 auto;
+    padding-bottom: 20%;
 }
 
 .section {
@@ -276,7 +277,7 @@ body {
 }
 
 .testimonials_img-conteiner {
-overflow: hidden;
+    overflow: hidden;
 }
 
 .testimonials__content {
