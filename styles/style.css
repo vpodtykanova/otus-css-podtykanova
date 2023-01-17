@@ -644,14 +644,14 @@ overflow: hidden;
         bottom: 0;
         border-top: solid;
         border-color: #000;
-        border-width: thin;
-    }
+        border-width: 3px;
+        align-items: center;
     }
 
     .navigation__links {
         font-family: 'Butler', 'Times New Roman', Times, serif;
         font-weight: 400;
-        font-size: 40px;
+        font-size: 2.5rem;
         color: black;
     }
 
