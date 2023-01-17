@@ -5,17 +5,18 @@
     <title>Mod Studio</title>
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
    
-    <!-- <nav>
-        <a href="#biography">Biography</a>
-        <a href="#designers">Designers</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#strongpoints">Strongpoints</a>
-    </nav> -->
+    <nav class="navigation"> 
+        <a href="#biography" class="navigation__links"><span class="navigation__letter">B</span> <span class="navigation__word">iography</span></a>
+        <a href="#designers" class="navigation__links"><span class="navigation__letter">D</span> <span class="navigation__word">esigners</span></a>
+        <a href="#testimonials" class="navigation__links"><span class="navigation__letter">T</span> <span class="navigation__word">estimonials</span></a>
+        <a href="#strongpoints" class="navigation__links"><span class="navigation__letter">S</span> <span class="navigation__word">trongpoints</span></a>
+    </nav>
 
-    <main class="main">
+    <main class="main scroller">
         <!-- секция 1 -->
         <section id="promo" class="section promo">
             <div class="promo-titles">
@@ -35,9 +36,9 @@
 
             <div class="biography__conteiner" class="clearfix">
                 <div class="biography__content">
-                    <h3 class="biography__page-title">Katya <br> Mills</h3>
+                    <h3 class="biography__page-title">Katya <br class="biography__br"> Mills</h3>
                     <p class="biography__page-description">Art Director</p>
-                    <p class="biography__page-description">Scenograpfy /Stiling /Creative Photography /Design</p> 
+                    <p class="biography__page-description">Scenograpfy / <br class="biography__description-br"> Stiling / <br class="biography__description-br"> Creative Photography / <br class="biography__description-br"> Design</p> 
                     <hr class=biography__hr>
                     <blockquote class="biography__blockquote">
                         &ldquo;The more&nbsp;I deal with the work as&nbsp;something that is&nbsp;my&nbsp;own, as&nbsp;something that is&nbsp;personal, the more successful it&nbsp;is.&rdquo;
@@ -102,7 +103,7 @@
             </div>
             
             <div class="testimonials__img-conteiner">
-                <img src="img/Cafe.png" alt="Кофейня">
+                <img class="testimonials__img" src="img/Cafe.png" alt="Кофейня">
             </div>
 
             <div class="testimonials__content">
